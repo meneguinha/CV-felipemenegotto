@@ -2,6 +2,7 @@
 
 Site de portfólio pessoal e currículo online, desenvolvido como uma **Single Page Application** estática, pronta para hospedagem no **GitHub Pages**.
 
+🔗 **[meneguinha.github.io/CV-felipemenegotto](https://meneguinha.github.io/CV-felipemenegotto/)**
 
 ---
 
