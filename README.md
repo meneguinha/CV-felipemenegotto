@@ -2,7 +2,6 @@
 
 Site de portfólio pessoal e currículo online, desenvolvido como uma **Single Page Application** estática, pronta para hospedagem no **GitHub Pages**.
 
-🔗 **[felipemenegotto.com.br](https://felipemenegotto.com.br)**
 
 ---
 
