@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Felipe Menegotto — Analista de Dados & Desenvolvedor</title>
-  <meta name="description" content="Portfólio e currículo de Felipe Nunes Menegotto — Físico com experiência internacional em transição para análise de dados e desenvolvimento de software." />
+  <meta name="description"
+    content="Portfólio e currículo de Felipe Nunes Menegotto — Físico com experiência internacional em transição para análise de dados e desenvolvimento de software." />
   <meta property="og:title" content="Felipe Menegotto — Analista de Dados & Desenvolvedor" />
   <meta property="og:description" content="Python, SQL, Tableau. Físico. Experiência internacional em 4 países." />
   <meta property="og:type" content="website" />
@@ -12,381 +14,507 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
+
 <body>
 
-<!-- ===== NAVIGATION ===== -->
-<nav id="navbar" role="navigation" aria-label="Main navigation">
-  <div class="nav-inner">
-    <a href="#hero" class="nav-logo" aria-label="Ir ao topo">FM</a>
-    <ul class="nav-links" role="list">
-      <li><a href="#about">Sobre</a></li>
-      <li><a href="#projects">Projetos</a></li>
-      <li><a href="#skills">Habilidades</a></li>
-      <li><a href="#experience">Experiência</a></li>
-      <li><a href="#education">Educação</a></li>
-    </ul>
-    <div style="display:flex;align-items:center;gap:10px;">
-      <button id="theme-toggle" aria-label="Alternar tema" title="Alternar modo claro/escuro"></button>
-      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Ir ao topo">FM</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about" data-i18n="nav-about">Sobre</a></li>
+        <li><a href="#projects" data-i18n="nav-projects">Projetos</a></li>
+        <li><a href="#skills" data-i18n="nav-skills">Habilidades</a></li>
+        <li><a href="#experience" data-i18n="nav-experience">Experiência</a></li>
+        <li><a href="#education" data-i18n="nav-education">Educação</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <button id="lang-toggle" class="lang-toggle" aria-label="Alterar idioma" title="Switch to English">
+          <img src="https://flagcdn.com/w20/us.png" alt="English" style="width:18px;border-radius:2px;">
+          EN
+        </button>
+        <button id="theme-toggle" aria-label="Alternar tema" title="Alternar modo claro/escuro"></button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-  </div>
-  <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação mobile">
-    <a href="#about">Sobre</a>
-    <a href="#projects">Projetos</a>
-    <a href="#skills">Habilidades</a>
-    <a href="#experience">Experiência</a>
-    <a href="#education">Educação</a>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação mobile">
+      <a href="#about" data-i18n="nav-about">Sobre</a>
+      <a href="#projects" data-i18n="nav-projects">Projetos</a>
+      <a href="#skills" data-i18n="nav-skills">Habilidades</a>
+      <a href="#experience" data-i18n="nav-experience">Experiência</a>
+      <a href="#education" data-i18n="nav-education">Educação</a>
+    </nav>
   </nav>
-</nav>
 
-<main>
+  <main>
 
-<!-- ===== HERO ===== -->
-<section id="hero">
-  <div class="hero-bg-blob" aria-hidden="true"></div>
-  <div class="hero-content">
-    <div class="hero-badge">Disponível para novas oportunidades</div>
-    <h1 class="hero-name">Felipe<br><span>Menegotto</span></h1>
-    <p class="hero-headline">Graduado em Física com experiência internacional e transição para análise de dados e desenvolvimento de software.</p>
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <div class="hero-bg-blob" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge" data-i18n="hero-badge">Disponível para novas oportunidades</div>
+        <h1 class="hero-name">Felipe<br><span>Menegotto</span></h1>
+        <p class="hero-headline" data-i18n="hero-headline">Graduado em Física com experiência internacional e transição para análise de dados e
+          desenvolvimento de software.</p>
 
-    <div class="hero-contacts">
-      <a href="tel:+5551985387022" class="contact-chip" id="contact-phone">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        +55 51 98538-7022
-      </a>
-      <a href="mailto:felipemenegotto@gmail.com" class="contact-chip" id="contact-email">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        felipemenegotto@gmail.com
-      </a>
-      <span class="contact-chip" id="contact-location">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Porto Alegre, Brazil
-      </span>
-      <a href="https://www.linkedin.com/in/felipemenegotto" target="_blank" rel="noopener" class="contact-chip" id="contact-linkedin">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-        LinkedIn
-      </a>
-      <a href="https://felipemenegotto.com.br" target="_blank" rel="noopener" class="contact-chip" id="contact-portfolio">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-        felipemenegotto.com.br
-      </a>
-    </div>
-
-    <div class="hero-cta">
-      <a href="#projects" class="btn-primary" id="cta-projects">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        Ver Projetos
-      </a>
-      <a href="mailto:felipemenegotto@gmail.com" class="btn-secondary" id="cta-contact">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        Entrar em Contato
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== ABOUT ===== -->
-<section id="about">
-  <p class="section-label">Sobre Mim</p>
-  <h2 class="section-title reveal">Rigor Científico<br>Aplicado a Dados</h2>
-  <div class="about-grid" style="grid-template-columns:1fr;">
-    <div class="about-text reveal">
-      <p>Sou Bacharel em Física pela <strong>UFRGS</strong> e Mestre pela <strong>Universidade de Lisboa</strong>, possuindo uma forte base em raciocínio quantitativo, estatística e metodologia científica.</p>
-      <p>Construo projetos de ponta a ponta usando <strong>Python, SQL e Tableau</strong> — desde pipelines de extração de dados e preparação até modelos preditivos e dashboards interativos.</p>
-      <p>Tenho experiência profissional em <strong>quatro países</strong> (Brasil, Portugal, Grécia e Polônia), atuando em ambientes multiculturais e multilíngues.</p>
-      <p>Busco uma função onde eu possa aplicar rigor analítico, autonomia técnica e a habilidade de comunicar insights orientados a dados para diversos públicos.</p>
-
-      <div class="lang-bar-wrap" style="margin-top:28px;">
-        <p style="font-size:0.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px;">Idiomas</p>
-        <div class="lang-item">
-          <div class="lang-header"><span>Português</span><span>Nativo</span></div>
-          <div class="lang-bar"><div class="lang-fill" data-width="100%"></div></div>
-        </div>
-        <div class="lang-item">
-          <div class="lang-header"><span>Inglês</span><span>C1 — Fluente</span></div>
-          <div class="lang-bar"><div class="lang-fill" data-width="90%"></div></div>
-        </div>
-        <div class="lang-item">
-          <div class="lang-header"><span>Espanhol</span><span>B2 — Intermediário</span></div>
-          <div class="lang-bar"><div class="lang-fill" data-width="65%"></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PROJECTS ===== -->
-<section id="projects">
-  <p class="section-label">Projetos em Destaque</p>
-  <h2 class="section-title reveal">O Que Eu Construo</h2>
-  <div class="accordion">
-
-    <!-- CARD 1 -->
-    <div class="acc-item reveal" id="project-football">
-      <button class="acc-header" aria-expanded="false" aria-controls="acc-body-football">
-        <div class="acc-header-left">
-          <span class="acc-icon">⚽</span>
-          <span class="acc-title">Campeonato Brasileiro — Estimador de Público</span>
-        </div>
-        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="acc-body" id="acc-body-football" hidden>
-        <div class="acc-links">
-          <a href="https://publicobrasileirao.fmind.app/" target="_blank" rel="noopener" id="link-football-app" class="acc-link acc-link--teal">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            Ver Aplicativo
+        <div class="hero-contacts">
+          <a href="tel:+5551985387022" class="contact-chip" id="contact-phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            +55 51 98538-7022
           </a>
-          <a href="https://public.tableau.com/app/profile/felipe.nunes.menegotto/viz/Publico_Renda_Brasileiro/PblicoPorequipe" target="_blank" rel="noopener" id="link-football-tableau" class="acc-link acc-link--purple">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-            Ver Dashboard Tableau
+          <a href="mailto:felipemenegotto@gmail.com" class="contact-chip" id="contact-email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            felipemenegotto@gmail.com
+          </a>
+          <span class="contact-chip" id="contact-location">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span data-i18n="contact-location">Porto Alegre, Brasil</span>
+          </span>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary" id="cta-projects">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            <span data-i18n="cta-projects">Ver Projetos</span>
+          </a>
+          <a href="mailto:felipemenegotto@gmail.com" class="btn-secondary" id="cta-contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span data-i18n="cta-contact">Entrar em Contato</span>
           </a>
         </div>
-        <p class="project-desc">
-          Pipeline de dados completo e modelo preditivo para estimar o público do Campeonato Brasileiro. Extração de dados de aproximadamente 3.000 PDFs usando a <strong>API do Gemini 2.5 Flash</strong> e Python. Modelo de regressão <strong>Gradient Boosting</strong> implementado como aplicativo interativo hospedado no GitHub Pages, consumindo uma API construída com <strong>FastAPI</strong> hospedada no Hugging Face. Construção de um <strong>dashboard no Tableau</strong> para análise exploratória do público e renda por equipe.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">Gemini API</span><span class="tag">Gradient Boosting</span><span class="tag">FastAPI</span><span class="tag">Hugging Face</span><span class="tag">Tableau</span><span class="tag">PDF Processing</span>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <p class="section-label" data-i18n="about-label">Sobre Mim</p>
+      <h2 class="section-title reveal" data-i18n="about-title">Rigor Científico<br>Aplicado a Dados</h2>
+      <div class="about-grid" style="grid-template-columns:1fr;">
+        <div class="about-text reveal">
+          <p data-i18n="about-p1">Sou Bacharel em Física pela <strong>UFRGS</strong> e Mestre pela <strong>Universidade de Lisboa</strong>,
+            possuindo uma forte base em raciocínio quantitativo, estatística e metodologia científica.</p>
+          <p data-i18n="about-p2">Construo projetos de ponta a ponta usando <strong>Python, SQL e Tableau</strong> — desde pipelines de
+            extração de dados e preparação até modelos preditivos e dashboards interativos.</p>
+          <p data-i18n="about-p3">Tenho experiência profissional em <strong>quatro países</strong> (Brasil, Portugal, Grécia e Polônia),
+            atuando em ambientes multiculturais e multilíngues.</p>
+          <p data-i18n="about-p4">Busco uma função onde eu possa aplicar rigor analítico, autonomia técnica e a habilidade de comunicar
+            insights orientados a dados para diversos públicos.</p>
+
+          <div class="lang-bar-wrap" style="margin-top:28px;">
+            <p
+              style="font-size:0.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px;" data-i18n="about-lang-title">
+              Idiomas</p>
+            <div class="lang-item">
+              <div class="lang-header"><span data-i18n="lang-pt">Português</span><span data-i18n="lang-native">Nativo</span></div>
+              <div class="lang-bar">
+                <div class="lang-fill" data-width="100%"></div>
+              </div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-header"><span data-i18n="lang-en">Inglês</span><span data-i18n="lang-fluent">C1 — Fluente</span></div>
+              <div class="lang-bar">
+                <div class="lang-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-header"><span data-i18n="lang-es">Espanhol</span><span data-i18n="lang-intermediate">B2 — Intermediário</span></div>
+              <div class="lang-bar">
+                <div class="lang-fill" data-width="65%"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- CARD 2 -->
-    <div class="acc-item reveal" id="project-realestate">
-      <button class="acc-header" aria-expanded="false" aria-controls="acc-body-realestate">
-        <div class="acc-header-left">
-          <span class="acc-icon">🏙️</span>
-          <span class="acc-title">Mercado Imobiliário de Porto Alegre — Análise de Preços</span>
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+      <p class="section-label" data-i18n="projects-label">Projetos em Destaque</p>
+      <h2 class="section-title reveal" data-i18n="projects-title">O Que Eu Construo</h2>
+      <div class="accordion">
+
+        <!-- CARD 1 -->
+        <div class="acc-item reveal" id="project-football">
+          <button class="acc-header" aria-expanded="false" aria-controls="acc-body-football">
+            <div class="acc-header-left">
+              <span class="acc-icon">⚽</span>
+              <span class="acc-title" data-i18n="project-football-title">Campeonato Brasileiro — Estimador de Público</span>
+            </div>
+            <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="acc-body" id="acc-body-football" hidden>
+            <div class="acc-links">
+              <a href="https://publicobrasileirao.fmind.app/" target="_blank" rel="noopener" id="link-football-app"
+                class="acc-link acc-link--teal">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span data-i18n="project-link-app">Ver Aplicativo</span>
+              </a>
+              <a href="https://public.tableau.com/app/profile/felipe.nunes.menegotto/viz/Publico_Renda_Brasileiro/PblicoPorequipe"
+                target="_blank" rel="noopener" id="link-football-tableau" class="acc-link acc-link--purple">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M9 21V9" />
+                </svg>
+                <span data-i18n="project-link-tableau">Ver Dashboard Tableau</span>
+              </a>
+            </div>
+            <p class="project-desc" data-i18n="project-football-desc">
+              Pipeline de dados completo e modelo preditivo para estimar o público do Campeonato Brasileiro. Extração de
+              dados de aproximadamente 3.000 PDFs usando a <strong>API do Gemini 2.5 Flash</strong> e Python. Modelo de
+              regressão <strong>Gradient Boosting</strong> implementado como aplicativo interativo hospedado no GitHub
+              Pages, consumindo uma API construída com <strong>FastAPI</strong> hospedada no Hugging Face. Construção de
+              um <strong>dashboard no Tableau</strong> para análise exploratória do público e renda por equipe.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">Gemini API</span><span class="tag">Gradient
+                Boosting</span><span class="tag">FastAPI</span><span class="tag">Hugging Face</span><span
+                class="tag">Tableau</span><span class="tag">PDF Processing</span>
+            </div>
+          </div>
         </div>
-        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="acc-body" id="acc-body-realestate" hidden>
-        <div class="acc-links">
-          <a href="https://imovelpoa.fmind.app/" target="_blank" rel="noopener" id="link-realestate-app" class="acc-link acc-link--teal">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            Ver Aplicativo
-          </a>
-          <a href="https://public.tableau.com/app/profile/felipe.nunes.menegotto/viz/ITBI-IPCA/dash_m2" target="_blank" rel="noopener" id="link-realestate-tableau" class="acc-link acc-link--purple">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-            Ver Dashboard Tableau
-          </a>
+
+        <!-- CARD 2 -->
+        <div class="acc-item reveal" id="project-realestate">
+          <button class="acc-header" aria-expanded="false" aria-controls="acc-body-realestate">
+            <div class="acc-header-left">
+              <span class="acc-icon">🏙️</span>
+              <span class="acc-title" data-i18n="project-realestate-title">Mercado Imobiliário de Porto Alegre — Análise de Preços</span>
+            </div>
+            <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="acc-body" id="acc-body-realestate" hidden>
+            <div class="acc-links">
+              <a href="https://imovelpoa.fmind.app/" target="_blank" rel="noopener" id="link-realestate-app"
+                class="acc-link acc-link--teal">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span data-i18n="project-link-app">Ver Aplicativo</span>
+              </a>
+              <a href="https://public.tableau.com/app/profile/felipe.nunes.menegotto/viz/ITBI-IPCA/dash_m2"
+                target="_blank" rel="noopener" id="link-realestate-tableau" class="acc-link acc-link--purple">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M9 21V9" />
+                </svg>
+                <span data-i18n="project-link-tableau">Ver Dashboard Tableau</span>
+              </a>
+            </div>
+            <p class="project-desc" data-i18n="project-realestate-desc">
+              Agregação e limpeza de <strong>+325.000 registros</strong> do ITBI a partir de dados abertos. Data
+              wrangling com shapefiles da cidade e integração da <strong>API do Banco Central</strong> para ajuste
+              histórico pela inflação. Expressões LOD no Tableau para cálculo preciso do preço médio por m². Construção
+              de um dashboard no Tableau e de um aplicativo de <strong>Machine Learning de Previsão de Preços</strong>.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Tableau</span><span
+                class="tag">LOD Expressions</span><span class="tag">Machine Learning</span><span class="tag">Banco
+                Central API</span>
+            </div>
+          </div>
         </div>
-        <p class="project-desc">
-          Agregação e limpeza de <strong>+325.000 registros</strong> do ITBI a partir de dados abertos. Data wrangling com shapefiles da cidade e integração da <strong>API do Banco Central</strong> para ajuste histórico pela inflação. Expressões LOD no Tableau para cálculo preciso do preço médio por m². Construção de um dashboard no Tableau e de um aplicativo de <strong>Machine Learning de Previsão de Preços</strong>.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Tableau</span><span class="tag">LOD Expressions</span><span class="tag">Machine Learning</span><span class="tag">Banco Central API</span>
+
+        <!-- CARD 3 -->
+        <div class="acc-item reveal" id="project-elections">
+          <button class="acc-header" aria-expanded="false" aria-controls="acc-body-elections">
+            <div class="acc-header-left">
+              <span class="acc-icon">🗳️</span>
+              <span class="acc-title" data-i18n="project-elections-title">Eleições Brasileiras 2022 — Gastos de Campanha</span>
+            </div>
+            <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="acc-body" id="acc-body-elections" hidden>
+            <div class="acc-links">
+              <a href="https://public.tableau.com/app/profile/felipe.nunes.menegotto/viz/despesascontratadas/ListadeCandidatos"
+                target="_blank" rel="noopener" id="link-elections-tableau" class="acc-link acc-link--purple">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M9 21V9" />
+                </svg>
+                <span data-i18n="project-link-tableau">Ver Dashboard Tableau</span>
+              </a>
+            </div>
+            <p class="project-desc" data-i18n="project-elections-desc">
+              Dashboard interativo que analisa as despesas de campanha com dados abertos do TSE. Permite exploração de
+              gastos por <strong>partido, estado e cargo</strong>, além de análise comparativa entre candidatos eleitos
+              e não eleitos.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Tableau</span><span class="tag">Open Data</span><span class="tag">TSE</span><span
+                class="tag">Data Storytelling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="acc-item reveal" id="project-arena">
+          <button class="acc-header" aria-expanded="false" aria-controls="acc-body-arena">
+            <div class="acc-header-left">
+              <span class="acc-icon">🏟️</span>
+              <span class="acc-title" data-i18n="project-arena-title">Dashboard — Ingressos da Arena do Grêmio</span>
+            </div>
+            <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="acc-body" id="acc-body-arena" hidden>
+            <div class="acc-links">
+              <a href="https://arena-gremio.fmind.app/" target="_blank" rel="noopener" id="link-arena-app"
+                class="acc-link acc-link--teal">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span data-i18n="project-link-dashboard">Ver Dashboard</span>
+              </a>
+            </div>
+            <p class="project-desc" data-i18n="project-arena-desc">
+              Dashboard interativo para análise de arrecadação e bilhetagem da Arena do Grêmio (2023–2025). Filtros
+              dinâmicos por ano e visitante com atualização em tempo real. Visualizações de <strong>arrecadação por
+                setor</strong>, <strong>bilhetes vendidos</strong> (donut chart) e <strong>evolução por jogo</strong>
+              (linha cronológica), além de tabela completa com ordenação.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML/CSS/JS</span><span class="tag">ApexCharts</span><span
+                class="tag">SheetJS</span><span class="tag">GitHub Pages</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="acc-item reveal" id="project-notafacil">
+          <button class="acc-header" aria-expanded="false" aria-controls="acc-body-notafacil">
+            <div class="acc-header-left">
+              <span class="acc-icon">📝</span>
+              <span class="acc-title" data-i18n="project-notafacil-title">NotaFácil — Correção Automática de Provas</span>
+            </div>
+            <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="acc-body" id="acc-body-notafacil" hidden>
+            <div class="acc-links">
+              <a href="https://notafacil.fmind.app/" target="_blank" rel="noopener" id="link-notafacil-app"
+                class="acc-link acc-link--teal">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span data-i18n="project-link-app">Ver Aplicativo</span>
+              </a>
+            </div>
+            <p class="project-desc" data-i18n="project-notafacil-desc">
+              Aplicativo web de <strong>correção automática de gabaritos</strong> com processamento 100% local no
+              navegador — sem envio de dados ao servidor. Utiliza <strong>OpenCV.js / WebAssembly</strong> para detecção
+              dos marcadores de alinhamento e leitura óptica das respostas (OMR). Gera relatórios em Excel e imagens
+              corrigidas em ZIP. Inclui gerador de matrizes de prova em PDF.
+            </p>
+            <div class="project-tags">
+              <span class="tag">OpenCV.js</span><span class="tag">WebAssembly</span><span class="tag">OMR</span><span
+                class="tag">HTML/CSS/JS</span><span class="tag">GitHub Pages</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+      <p class="section-label" data-i18n="skills-label">Stack Técnico</p>
+      <h2 class="section-title reveal" data-i18n="skills-title">Habilidades &amp; Ferramentas</h2>
+      <div class="skills-flat">
+
+        <div class="skill-row reveal">
+          <div class="skill-row-label" data-i18n="skills-row-languages">Linguagens &amp; Bibliotecas</div>
+          <div class="skill-list">
+            <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">scikit-learn</span><span
+              class="tag">numpy</span><span class="tag">matplotlib</span><span class="tag">seaborn</span><span
+              class="tag">requests</span><span class="tag">BeautifulSoup</span><span class="tag">Streamlit</span><span
+              class="tag">FastAPI</span><span class="tag">openpyxl</span><span class="tag">regex</span>
+          </div>
+        </div>
+
+        <div class="skill-row reveal">
+          <div class="skill-row-label" data-i18n="skills-row-databases">Bancos de Dados</div>
+          <div class="skill-list">
+            <span class="tag">SQL</span><span class="tag">BigQuery</span><span class="tag">PostgreSQL</span><span
+              class="tag">SQLite</span><span class="tag">Window Functions</span><span class="tag">CTEs</span><span
+              class="tag">Subqueries</span><span class="tag">Aggregations</span><span class="tag">Joins</span><span
+              class="tag">Indexing</span><span class="tag">Data Modeling</span>
+          </div>
+        </div>
+
+        <div class="skill-row reveal">
+          <div class="skill-row-label" data-i18n="skills-row-viz">Visualização</div>
+          <div class="skill-list">
+            <span class="tag">Tableau</span><span class="tag">Tableau Public</span><span class="tag">LOD
+              Expressions</span><span class="tag">Calculated Fields</span><span class="tag">Table
+              Calculations</span><span class="tag">ApexCharts</span><span class="tag">matplotlib</span><span
+              class="tag">seaborn</span><span class="tag">plotly</span><span class="tag">Data Storytelling</span><span
+              class="tag">Dashboard Design</span>
+          </div>
+        </div>
+
+        <div class="skill-row reveal">
+          <div class="skill-row-label" data-i18n="skills-row-other">Outras Competências</div>
+          <div class="skill-list">
+            <span class="tag">Gemini API</span><span class="tag">Banco Central API</span><span class="tag">REST
+              APIs</span><span class="tag">PDF Processing</span><span class="tag">Web Scraping</span><span
+              class="tag">OpenCV.js</span><span class="tag">WebAssembly</span><span class="tag">Git / GitHub</span><span
+              class="tag">Jupyter Notebook</span><span class="tag">ETL Pipelines</span><span class="tag">Estatística
+              Aplicada</span><span class="tag">GitHub Pages</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="certs-section reveal">
+        <div class="certs-title" data-i18n="skills-certs-title">Certificações</div>
+        <div class="certs-list">
+          <span class="cert-badge">Tableau 2024 A-Z</span>
+          <span class="cert-badge">Tableau for Data Science</span>
+          <span class="cert-badge">Machine Learning with Sklearn</span>
+          <span class="cert-badge">ML Model Validation</span>
+          <span class="cert-badge">Text Analysis &amp; NLP</span>
+          <span class="cert-badge">Web Scraping with Python</span>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- CARD 3 -->
-    <div class="acc-item reveal" id="project-elections">
-      <button class="acc-header" aria-expanded="false" aria-controls="acc-body-elections">
-        <div class="acc-header-left">
-          <span class="acc-icon">🗳️</span>
-          <span class="acc-title">Eleições Brasileiras 2022 — Gastos de Campanha</span>
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience">
+      <p class="section-label" data-i18n="exp-label">Trajetória Profissional</p>
+      <h2 class="section-title reveal" data-i18n="exp-title">Experiência Internacional</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal" id="exp-cognizant">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role" data-i18n="exp-cog-role">Analista de Processos Sênior</span>
+              <span class="timeline-period">2024 – 2025</span>
+            </div>
+            <div class="timeline-company" data-i18n="exp-cog-company">Cognizant — Polônia <img src="https://flagcdn.com/w20/pl.png" alt="PL" style="width:16px;vertical-align:middle;margin-bottom:2px;"></div>
+            <p class="timeline-desc" data-i18n="exp-cog-desc">Análise de documentação de projetos de software, garantia de conformidade com
+              programas e resolução de inconsistências sistêmicas. Ponto de contato multilíngue na Europa e América
+              Latina.</p>
+          </div>
         </div>
-        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="acc-body" id="acc-body-elections" hidden>
-        <div class="acc-links">
-          <a href="https://public.tableau.com/app/profile/felipe.nunes.menegotto/viz/despesascontratadas/ListadeCandidatos" target="_blank" rel="noopener" id="link-elections-tableau" class="acc-link acc-link--purple">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-            Ver Dashboard Tableau
-          </a>
+        <div class="timeline-item reveal" id="exp-teleperformance">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role" data-i18n="exp-tp-role">Especialista em Suporte Técnico</span>
+              <span class="timeline-period">2023 – 2024</span>
+            </div>
+            <div class="timeline-company" data-i18n="exp-tp-company">Teleperformance — Grécia <img src="https://flagcdn.com/w20/gr.png" alt="GR" style="width:16px;vertical-align:middle;margin-bottom:2px;"></div>
+            <p class="timeline-desc" data-i18n="exp-tp-desc">Suporte técnico especializado de alta complexidade em software antivírus e
+              diagnóstico focado na retenção de clientes.</p>
+          </div>
         </div>
-        <p class="project-desc">
-          Dashboard interativo que analisa as despesas de campanha com dados abertos do TSE. Permite exploração de gastos por <strong>partido, estado e cargo</strong>, além de análise comparativa entre candidatos eleitos e não eleitos.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Tableau</span><span class="tag">Open Data</span><span class="tag">TSE</span><span class="tag">Data Storytelling</span>
+        <div class="timeline-item reveal" id="exp-mediaxxi">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role" data-i18n="exp-media-role">Consultor Científico e de Marketing</span>
+              <span class="timeline-period">2022 – 2023</span>
+            </div>
+            <div class="timeline-company" data-i18n="exp-media-company">Media XXI — Portugal <img src="https://flagcdn.com/w20/pt.png" alt="PT" style="width:16px;vertical-align:middle;margin-bottom:2px;"></div>
+            <p class="timeline-desc" data-i18n="exp-media-desc">Estruturação de propostas de financiamento técnico-científicas (Horizon 2030 da UE)
+              e relatórios de conclusão de projetos.</p>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <!-- CARD 4 -->
-    <div class="acc-item reveal" id="project-arena">
-      <button class="acc-header" aria-expanded="false" aria-controls="acc-body-arena">
-        <div class="acc-header-left">
-          <span class="acc-icon">🏟️</span>
-          <span class="acc-title">Dashboard — Ingressos da Arena do Grêmio</span>
-        </div>
-        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="acc-body" id="acc-body-arena" hidden>
-        <div class="acc-links">
-          <a href="https://arena-gremio.fmind.app/" target="_blank" rel="noopener" id="link-arena-app" class="acc-link acc-link--teal">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            Ver Dashboard
-          </a>
-        </div>
-        <p class="project-desc">
-          Dashboard interativo para análise de arrecadação e bilhetagem da Arena do Grêmio (2023–2025). Filtros dinâmicos por ano e visitante com atualização em tempo real. Visualizações de <strong>arrecadação por setor</strong>, <strong>bilhetes vendidos</strong> (donut chart) e <strong>evolução por jogo</strong> (linha cronológica), além de tabela completa com ordenação.
-        </p>
-        <div class="project-tags">
-          <span class="tag">HTML/CSS/JS</span><span class="tag">ApexCharts</span><span class="tag">SheetJS</span><span class="tag">GitHub Pages</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 5 -->
-    <div class="acc-item reveal" id="project-notafacil">
-      <button class="acc-header" aria-expanded="false" aria-controls="acc-body-notafacil">
-        <div class="acc-header-left">
-          <span class="acc-icon">📝</span>
-          <span class="acc-title">NotaFácil — Correção Automática de Provas</span>
-        </div>
-        <svg class="acc-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="acc-body" id="acc-body-notafacil" hidden>
-        <div class="acc-links">
-          <a href="https://notafacil.fmind.app/" target="_blank" rel="noopener" id="link-notafacil-app" class="acc-link acc-link--teal">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            Ver Aplicativo
-          </a>
-        </div>
-        <p class="project-desc">
-          Aplicativo web de <strong>correção automática de gabaritos</strong> com processamento 100% local no navegador — sem envio de dados ao servidor. Utiliza <strong>OpenCV.js / WebAssembly</strong> para detecção dos marcadores de alinhamento e leitura óptica das respostas (OMR). Gera relatórios em Excel e imagens corrigidas em ZIP. Inclui gerador de matrizes de prova em PDF.
-        </p>
-        <div class="project-tags">
-          <span class="tag">OpenCV.js</span><span class="tag">WebAssembly</span><span class="tag">OMR</span><span class="tag">HTML/CSS/JS</span><span class="tag">GitHub Pages</span>
+        <div class="timeline-item reveal" id="exp-professor">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role" data-i18n="exp-prof-role">Professor de Física e Matemática</span>
+              <span class="timeline-period">2015 – 2019</span>
+            </div>
+            <div class="timeline-company" data-i18n="exp-prof-company">Brasil <img src="https://flagcdn.com/w20/br.png" alt="BR" style="width:16px;vertical-align:middle;margin-bottom:2px;"></div>
+            <p class="timeline-desc" data-i18n="exp-prof-desc">Prática consolidada na tradução de conceitos técnicos complexos para públicos
+              diversos — habilidade essencial para apresentação de resultados analíticos.</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
-
-<!-- ===== SKILLS ===== -->
-<section id="skills">
-  <p class="section-label">Stack Técnico</p>
-  <h2 class="section-title reveal">Habilidades &amp; Ferramentas</h2>
-  <div class="skills-flat">
-
-    <div class="skill-row reveal">
-      <div class="skill-row-label">Linguagens &amp; Bibliotecas</div>
-      <div class="skill-list">
-        <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">scikit-learn</span><span class="tag">numpy</span><span class="tag">matplotlib</span><span class="tag">seaborn</span><span class="tag">requests</span><span class="tag">BeautifulSoup</span><span class="tag">Streamlit</span><span class="tag">FastAPI</span><span class="tag">openpyxl</span><span class="tag">regex</span>
-      </div>
-    </div>
-
-    <div class="skill-row reveal">
-      <div class="skill-row-label">Bancos de Dados</div>
-      <div class="skill-list">
-        <span class="tag">SQL</span><span class="tag">BigQuery</span><span class="tag">PostgreSQL</span><span class="tag">SQLite</span><span class="tag">Window Functions</span><span class="tag">CTEs</span><span class="tag">Subqueries</span><span class="tag">Aggregations</span><span class="tag">Joins</span><span class="tag">Indexing</span><span class="tag">Data Modeling</span>
-      </div>
-    </div>
-
-    <div class="skill-row reveal">
-      <div class="skill-row-label">Visualização</div>
-      <div class="skill-list">
-        <span class="tag">Tableau</span><span class="tag">Tableau Public</span><span class="tag">LOD Expressions</span><span class="tag">Calculated Fields</span><span class="tag">Table Calculations</span><span class="tag">ApexCharts</span><span class="tag">matplotlib</span><span class="tag">seaborn</span><span class="tag">plotly</span><span class="tag">Data Storytelling</span><span class="tag">Dashboard Design</span>
-      </div>
-    </div>
-
-    <div class="skill-row reveal">
-      <div class="skill-row-label">Outras Competências</div>
-      <div class="skill-list">
-        <span class="tag">Gemini API</span><span class="tag">Banco Central API</span><span class="tag">REST APIs</span><span class="tag">PDF Processing</span><span class="tag">Web Scraping</span><span class="tag">OpenCV.js</span><span class="tag">WebAssembly</span><span class="tag">Git / GitHub</span><span class="tag">Jupyter Notebook</span><span class="tag">ETL Pipelines</span><span class="tag">Estatística Aplicada</span><span class="tag">GitHub Pages</span>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="certs-section reveal">
-    <div class="certs-title">Certificações</div>
-    <div class="certs-list">
-      <span class="cert-badge">Tableau 2024 A-Z</span>
-      <span class="cert-badge">Tableau for Data Science</span>
-      <span class="cert-badge">Machine Learning with Sklearn</span>
-      <span class="cert-badge">ML Model Validation</span>
-      <span class="cert-badge">Text Analysis &amp; NLP</span>
-      <span class="cert-badge">Web Scraping with Python</span>
-    </div>
-  </div>
-</section>
-
-<!-- ===== EXPERIENCE ===== -->
-<section id="experience">
-  <p class="section-label">Trajetória Profissional</p>
-  <h2 class="section-title reveal">Experiência Internacional</h2>
-  <div class="timeline">
-    <div class="timeline-item reveal" id="exp-cognizant">
-      <div class="timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-role">Analista de Processos Sênior</span>
-          <span class="timeline-period">2024 – 2025</span>
+    <!-- ===== EDUCATION ===== -->
+    <section id="education">
+      <p class="section-label" data-i18n="edu-label">Formação Acadêmica</p>
+      <h2 class="section-title reveal" data-i18n="edu-title">Educação</h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal" id="edu-lisbon">
+          <div style="font-size:2rem;margin-bottom:16px;">🎓</div>
+          <div class="edu-degree" data-i18n="edu-lisbon-degree">M.Sc. em Comunicação e Cultura Científica</div>
+          <div class="edu-school" data-i18n="edu-lisbon-school">Universidade de Lisboa</div>
+          <div class="edu-period" data-i18n="edu-lisbon-period">2019 – 2021 · Lisboa, Portugal</div>
+          <p class="edu-desc" data-i18n="edu-lisbon-desc">Foco em data storytelling e narrativas baseadas em evidências.</p>
         </div>
-        <div class="timeline-company">Cognizant — Polônia 🇵🇱</div>
-        <p class="timeline-desc">Análise de documentação de projetos de software, garantia de conformidade com programas e resolução de inconsistências sistêmicas. Ponto de contato multilíngue na Europa e América Latina.</p>
-      </div>
-    </div>
-    <div class="timeline-item reveal" id="exp-teleperformance">
-      <div class="timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-role">Especialista em Suporte Técnico</span>
-          <span class="timeline-period">2023 – 2024</span>
+        <div class="edu-card reveal" id="edu-ufrgs">
+          <div style="font-size:2rem;margin-bottom:16px;">⚛️</div>
+          <div class="edu-degree" data-i18n="edu-ufrgs-degree">B.Sc. em Física</div>
+          <div class="edu-school" data-i18n="edu-ufrgs-school">UFRGS — Universidade Federal do Rio Grande do Sul</div>
+          <div class="edu-period" data-i18n="edu-ufrgs-period">2009 – 2014 · Porto Alegre, Brasil</div>
+          <p class="edu-desc" data-i18n="edu-ufrgs-desc">Treinamento intensivo em matemática, estatística e modelagem computacional.</p>
         </div>
-        <div class="timeline-company">Teleperformance — Grécia 🇬🇷</div>
-        <p class="timeline-desc">Suporte técnico especializado de alta complexidade em software antivírus e diagnóstico focado na retenção de clientes.</p>
       </div>
-    </div>
-    <div class="timeline-item reveal" id="exp-mediaxxi">
-      <div class="timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-role">Consultor Científico e de Marketing</span>
-          <span class="timeline-period">2022 – 2023</span>
-        </div>
-        <div class="timeline-company">Media XXI — Portugal 🇵🇹</div>
-        <p class="timeline-desc">Estruturação de propostas de financiamento técnico-científicas (Horizon 2030 da UE) e relatórios de conclusão de projetos.</p>
-      </div>
-    </div>
-    <div class="timeline-item reveal" id="exp-professor">
-      <div class="timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-role">Professor de Física e Matemática</span>
-          <span class="timeline-period">2015 – 2019</span>
-        </div>
-        <div class="timeline-company">Brasil 🇧🇷</div>
-        <p class="timeline-desc">Prática consolidada na tradução de conceitos técnicos complexos para públicos diversos — habilidade essencial para apresentação de resultados analíticos.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ===== EDUCATION ===== -->
-<section id="education">
-  <p class="section-label">Formação Acadêmica</p>
-  <h2 class="section-title reveal">Educação</h2>
-  <div class="edu-grid">
-    <div class="edu-card reveal" id="edu-lisbon">
-      <div style="font-size:2rem;margin-bottom:16px;">🎓</div>
-      <div class="edu-degree">M.Sc. em Comunicação e Cultura Científica</div>
-      <div class="edu-school">Universidade de Lisboa</div>
-      <div class="edu-period">2019 – 2021 · Lisboa, Portugal</div>
-      <p class="edu-desc">Foco em data storytelling e narrativas baseadas em evidências.</p>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-name">Felipe Nunes Menegotto</div>
+      <p class="footer-text" data-i18n="footer-text">Feito com HTML, CSS &amp; JS · Porto Alegre, Brazil · 2025</p>
     </div>
-    <div class="edu-card reveal" id="edu-ufrgs">
-      <div style="font-size:2rem;margin-bottom:16px;">⚛️</div>
-      <div class="edu-degree">B.Sc. em Física</div>
-      <div class="edu-school">UFRGS — Universidade Federal do Rio Grande do Sul</div>
-      <div class="edu-period">2009 – 2014 · Porto Alegre, Brasil</div>
-      <p class="edu-desc">Treinamento intensivo em matemática, estatística e modelagem computacional.</p>
-    </div>
-  </div>
-</section>
+  </footer>
 
-</main>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-name">Felipe Nunes Menegotto</div>
-    <p class="footer-text">Feito com HTML, CSS &amp; JS · Porto Alegre, Brazil · 2025</p>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

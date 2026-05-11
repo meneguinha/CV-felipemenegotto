@@ -130,6 +130,24 @@ nav {
 }
 #theme-toggle:hover { color: var(--accent); border-color: var(--accent); transform: rotate(20deg); }
 
+/* Language Toggle */
+.lang-toggle {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  height: 38px;
+  padding: 0 12px;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition: all var(--transition);
+  font-family: 'JetBrains Mono', monospace;
+}
+.lang-toggle:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+
 /* Hamburger */
 .hamburger {
   display: none;
